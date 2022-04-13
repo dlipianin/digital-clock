@@ -1,0 +1,78 @@
+body {
+  font-family: "Poiret One", cursive;
+  overflow: hidden;
+  background: conic-gradient(
+    at 125% 50%,
+    #b78cf7,
+    #ff7c94,
+    #ffcf0d,
+    #ff7c94,
+    #b78cf7
+  );
+}
+
+.container {
+  width: 95%;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.digital-clock {
+  width: fit-content;
+  margin: auto;
+  padding: 10px;
+  border-radius: 2px;
+  color: white;
+  background-color: rgb(0, 0, 0, 0.1);
+}
+
+h1 {
+  display: inline-block;
+  margin: 0 10px;
+  font-weight: bold;
+  font-size: 5rem;
+}
+
+#bar1,
+#bar2 {
+  vertical-align: text-bottom;
+}
+
+/*@media (max-width: 768px) {
+  #bar1,
+  #bar2 {
+    display: none;
+  }
+
+  .digital-clock {
+    text-align: center;
+    width: 100%;
+  }
+
+  h1 {
+    display: block;
+  }
+}*/
+
+@media (max-width: 768px) {
+  .digital-clock {
+    text-align: center;
+    width: 100%;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .digital-clock {
+    text-align: center;
+  }
+  h1 {
+    font-size: 2rem;
+    margin: 0;
+  }
+}
